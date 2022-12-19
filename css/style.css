@@ -1,0 +1,24 @@
+/* ......../ media query /.......... */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: relative;
+    display: flex;
+}
+
+nav image {
+    flex-shrink: 1;
+}
+
+.navbar-container{
+    position: absolute;
+    top:0px;
+}
+
+@media screen and (min-width:481px) {
+    
+}
