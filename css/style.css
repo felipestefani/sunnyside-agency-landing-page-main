@@ -1,151 +1,176 @@
-/* ......../ media query /.......... */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
 
-*{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
 }
 
-html{
-    display: flex;
-    justify-content: flex-end;
-}
-
 body{
-    max-width: 480px;
+    font-family: 'Fraunces', 'Times New Roman', Times, serif;
 }
-
+/*-----------------------header / navabr--------------------------*/
 header{
+    width: 100%;
+    max-width: 480px;
     position: relative;
 }
 
-header h1 {
-    position: absolute;
-    text-transform: uppercase;
-    font-family: 'Fraunces', 'Times New Roman', Times, serif;
-    font-size: 900;
-    letter-spacing: 10px;
-    text-align: center;
-    top: 30%;
-    font-size: 36px;
-    color: #FFF;
+#header-background{
+    width: 100%;
 }
 
-header #header-background {
-    width: 100%;
+.arrow-down{
+    position: absolute;
+    top:300px;
+    left: 46%;
 }
 
 nav{
     position: absolute;
+    margin-top: 20px;
+    height: 70px;
     width: 100%;
-    top: 0px;
-    margin: 20px 0px;
-    padding: 0 10px;
-    border: 2px solid red;
+    top: 0;
+
 }
 
 .navbar-container{
     position: relative;
-    display: block;
-    margin: 10px 10px;
-    height: 60px;
+    height: 64px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
 }
 
-.logo{
-   width: 130px;
-}
-
-.navbar-container input[type="checkbox"]{
+.navbar-container input[type="checkbox"] {
     position: absolute;
     right: 0px;
     height: 30px;
     width: 30px;
+    display: block;
     z-index: 5;
     opacity: 0;
-}
+  }
 
-.navbar-container > img {
+  .navbar-container .hamburguer-menu {
+    height: 18px;
+    width: 19px;
     position: absolute;
     right: 0px;
-    top: 0px;
-    width: 30px;
-}
+    z-index: 2;
+  }
 
-ul{
-    position: absolute;
-    order: 2;
-    display: flex;
-    /*top: 60px;
-    left: -10px;*/
-    margin-top: 40px ;
-    padding-top: 20px;
+  .navbar .menu-items {
     width: 100%;
-    transform: translate(150%);
+    transform: translate(-150%);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 100px;
     background-color: #FFF;
-    border: 2px solid red;
-}
+    padding-top:15px;
+    padding-bottom: 30px;
+  }
 
-ul li{
+  .navbar .menu-items li {
+    padding: 18px 0;
     width: 100%;
-    list-style: none;
-    padding: 12px 0;
-    font-size: 18px;
     text-align: center;
+    background-color: #FFF;
+    font-size: 1.3rem;
+    list-style: none;
     font-family: 'Barlow', Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-ul li #contato{
-    background-color: hsl(51, 100%, 49%);
-    padding:15px 30px ;
-    color: black;
-    border-radius: 40px;
-    font-family: 'Fraunces';
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-
-ul a{
+  }
+  
+  .navbar .menu-items li a{
     text-decoration: none;
     color: hsl(210, 4%, 67%);
-    font-weight:500;
-    transition: color 0.3s ease-in-out;
-    padding: 5px;
-}
+  }
 
-ul a:hover{
-    color: #117964;
-    transition: color 0.3s ease-in-out;
-}
+  .navbar .menu-items #contato {
+    margin-bottom: 10px;
+    padding-top: 25px;
+  }
 
-header .arrow-down {
+  .navbar .menu-items li #a-contato {
+    padding: 18px 30px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 100px;
+    font-family: 'Fraunces', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0%);
+  }
+
+  header h1{
+    letter-spacing: 8px;
+    text-align: center;
     position: absolute;
-    right: 45%;
-    top: 54%;
-}
+    top: 150px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 42px;
+  }
 
-.navbar-container input[type="checkbox"],
-.navbar-container .logo{
+  /*-----------------------section 1 (transform)--------------------------*/
+  section{
+    max-width: 480px;
+    margin: -4px 0;
+  }
+  section img{
+    width: 100%;
+  }
+
+  section h2{
+    margin: 60px 40px 30px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+  }
+
+  section p{
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    color: hsl(210, 4%, 67%);
+    margin: 10px 25px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  section h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 40px 0;
+    position: relative;
+  }
+
+  section h3::after{
+    content: '';
     display: block;
-}
+    width: 44%;
+    height:10px;
+    background-color: hsla(51, 100%, 49%, 0.317);
+    position: absolute;
+    top:15px;
+    left: 28%;
+    border-radius: 10px;
+    z-index: -1;
+  }
 
-.navbar-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
-}
-
-.navbar-container input[type="checkbox"]:checked ~ ul li {
-    color: blue;
-}
-
-@media screen and (min-width:481px) {
-    
-}
+   /*-----------------------section 2 (--------------------------*/
+  .stand-out h3::after{
+    background-color: hsla(7, 99%, 70%, 0.223)
+  }
