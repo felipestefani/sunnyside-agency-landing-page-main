@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;  
 }
-
 body{
     font-family: 'Fraunces', 'Times New Roman', Times, serif;
 }
@@ -17,26 +16,21 @@ header{
     max-width: 480px;
     position: relative;
 }
-
 #header-background{
     width: 100%;
 }
-
 .arrow-down{
     position: absolute;
-    top:300px;
+    top:290px;
     left: 46%;
 }
-
 nav{
     position: absolute;
     margin-top: 20px;
     height: 70px;
     width: 100%;
     top: 0;
-
 }
-
 .navbar-container{
     position: relative;
     height: 64px;
@@ -46,7 +40,6 @@ nav{
     justify-content: space-between;
     margin-left: 5%;
 }
-
 .navbar-container input[type="checkbox"] {
     position: absolute;
     right: 0px;
@@ -56,7 +49,6 @@ nav{
     z-index: 5;
     opacity: 0;
   }
-
   .navbar-container .hamburguer-menu {
     height: 18px;
     width: 19px;
@@ -64,7 +56,6 @@ nav{
     right: 0px;
     z-index: 2;
   }
-
   .navbar .menu-items {
     width: 100%;
     transform: translate(-150%);
@@ -73,12 +64,11 @@ nav{
     align-items: center;
     transition: transform 0.5s ease-in-out;
     position: absolute;
-    top: 100px;
+    top: 85px;
     background-color: #FFF;
     padding-top:15px;
     padding-bottom: 30px;
   }
-
   .navbar .menu-items li {
     padding: 18px 0;
     width: 100%;
@@ -88,17 +78,14 @@ nav{
     list-style: none;
     font-family: 'Barlow', Arial, Helvetica, sans-serif;
   }
-  
   .navbar .menu-items li a{
     text-decoration: none;
     color: hsl(210, 4%, 67%);
   }
-
   .navbar .menu-items #contato {
     margin-bottom: 10px;
     padding-top: 25px;
   }
-
   .navbar .menu-items li #a-contato {
     padding: 18px 30px;
     background-color: hsl(51, 100%, 49%);
@@ -110,11 +97,9 @@ nav{
     color: black;
     margin-bottom: 15px;
   }
-
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0%);
   }
-
   header h1{
     letter-spacing: 8px;
     text-align: center;
@@ -124,7 +109,6 @@ nav{
     color: #FFF;
     font-size: 42px;
   }
-
   /*-----------------------section 1 (transform)--------------------------*/
   section{
     max-width: 480px;
@@ -133,44 +117,160 @@ nav{
   section img{
     width: 100%;
   }
-
   section h2{
     margin: 60px 40px 30px;
     text-align: center;
     font-size: 34px;
     font-weight: 900;
   }
-
   section p{
     font-family: 'Barlow', Arial, Helvetica, sans-serif;
     color: hsl(210, 4%, 67%);
     margin: 10px 25px;
     text-align: center;
     font-size: 18px;
+    line-height: 30px;
   }
-
   section h3{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 40px 0;
     position: relative;
+    font-size: 16px;
   }
-
   section h3::after{
     content: '';
     display: block;
-    width: 44%;
+    width: 40%;
     height:10px;
     background-color: hsla(51, 100%, 49%, 0.317);
     position: absolute;
-    top:15px;
-    left: 28%;
+    top:12px;
+    left: 30%;
     border-radius: 10px;
     z-index: -1;
   }
-
-   /*-----------------------section 2 (--------------------------*/
+  /*-----------------------section 2 (stand-out)--------------------------*/
   .stand-out h3::after{
     background-color: hsla(7, 99%, 70%, 0.223)
   }
+  /*----------------------section 3 (graphic deseing)--------------------*/
+  .info{
+    position: relative;
+  }
+  .info h2{
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 170px;
+    font-size: 30px;
+  }
+  .cherry h2,
+  .cherry p{
+   color: hsl(167, 40%, 24%); 
+   line-height: 25px;
+  }
+  .orange h2,
+  .orange p{
+    color: hsl(198, 62%, 26%);
+    line-height: 25px;
+  }
+  .info p{
+    position: absolute;
+    bottom: 50px;
+    font-size: 15px;
+  }
+  /*---------------------testimonials--------------------------*/
+.client-testimonials{
+  max-width: 480px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.client-testimonials h2{
+  text-align: center;
+  margin-top: 60px;
+  color: hsl(210, 4%, 67%);
+}
+.testimonial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial img{
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+.testimonial p{
+  margin: 0px 24px;
+  color: hsl(232, 10%, 55%);
+}
+.testimonial h3{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  color: hsl(198, 62%, 26%);
+  font-weight: 900;
+  font-size: 18px;
+}
+.testimonial h3::after{
+  content: none;
+}
+.testimonial h4{
+  color: hsl(210, 4%, 67%);
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+/*------------------------footter-------------------------------*/
+footer{
+  max-width: 480px;
+}
+footer .images .sup,
+footer .images .inf{
+  max-width: 480px;
+  display: flex;
+}
+footer .images .sup img,
+footer .images .inf img{
+  width: 50%;
+}
+footer .about-us{
+  background-color:rgb(159, 210, 197);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .about-us svg{
+  margin: 80px 0 60px;
+  width: 40%;
+  height: auto;
+}
+.footer-logo path{
+  fill:rgb(65, 114, 101);
+}
+footer .footer-menu{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+footer li{
+  list-style: none;
+}
+footer a{
+  text-decoration: none;
+  color:hsl(168, 34%, 41%);
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.footer-contacts{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-bottom: 80px;
+}
