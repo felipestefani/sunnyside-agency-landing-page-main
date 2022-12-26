@@ -9,7 +9,6 @@
 }
 html{
   scroll-behavior: smooth;
-  scroll-
 }
 body{
     font-family: 'Fraunces', 'Times New Roman', Times, serif;
@@ -291,6 +290,10 @@ footer a{
   color: hsl(167, 40%, 24%);
 }
 /*------------------------------hover status--------------------------*/
+.navbar .menu-items li #a-contato:hover {
+  color: hsl(51, 100%, 49%);
+  background-color: hsla(203, 68%, 58%, 0.856);
+}
 section h3:hover{
   cursor: pointer;
 }
