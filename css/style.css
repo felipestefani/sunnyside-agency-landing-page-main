@@ -273,12 +273,13 @@ footer a{
 }
 .footer-contacts{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 50%;
   margin-bottom: 50px;
 }
 .footer-contacts li{
   text-align: center;
+  width: 100%;
 }
 .footer-contacts svg{
   fill: #2C7566;
@@ -306,9 +307,6 @@ section h3:hover::after{
 }
 footer a:hover{
   color: #FFF;
-}
-.footer-contacts svg path:hover{
-  fill:#FFF
 }
 .footer-contacts svg:hover{
   fill:#FFF;
